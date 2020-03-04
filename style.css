@@ -1,13 +1,90 @@
-.quiz, .summary {
+*{
+    font-family: sans-serif;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  h1{
+    text-align: center;
+    font-size: 25px;
+    background-color: #3B4253;
+    color: white;
+    padding: 60px;
+    
+  }
+  a {
+    border: 1px solid  #C95F70;;
+    padding: 10px 25px;
+    color:  #C95F70;
+    border-radius: 5px;
+    margin-top: 50px;
+    display: inline-block;
+  }
+  
+  a:hover {
+    background-color: #C95F70;
+    color: white;
+  }
+  
+  h2{
+    font-size: 30px;
+    padding: 40px;
+    
+  }
+  .answer{
+    border: 1px solid #000;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-indent: -9999px;
+    background-size: 90%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  .answer.blue{
+    background-image: url("./jasmine.png");
+  }
+  .answer.yellow{
+    background-image: url("./mermaid.png");
+  }
+  .answer.orange{
+    background-image: url("./snowwhite.png");
+  }
+  
+  .answer.purple{
+    background-image: url("./cinderella.png");
+  }
+  
+  .quiz, .summary {
     display: none;
-}
-.quiz ul {
-    list-style-type: none;
-    padding: 0;
-}
-.quiz li {
+  }
+  .answer {
     cursor: pointer;
-}
-.selected {
-    background-color: yellow;
-}
+  }
+  
+  .selected {
+    background-color: rgb(165, 128, 203);
+
+
+    
+  }
+  
+  img {
+    height: 150px;
+    margin-top: 25px;
+    display:none;
+  }
+  
+  img.show {
+    display: inline-block;
+  }
+  
+  
