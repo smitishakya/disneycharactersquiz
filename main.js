@@ -55,8 +55,17 @@ $(document).ready(function(){
  
 });
 
+function updateScore(score){
+  $('.currentScore').text(`Current Score: ${score}`)
+}
+
+function updateQuestionNumber(){
+  $('.questionCount').text(`Question ${currentQuestion + 1} of 4`);
+}
+
 
 function showQuestion(){
+  updateQuestionNumber();
   let question = questions[currentQuestion];
   $('.quiz h2').text(question.title);
   //clearing any text from html 
@@ -65,12 +74,14 @@ function showQuestion(){
     $('.answers').append('<li id="'+i+'" class="answer '+question.answers[i]+'">'+question.answers[i]+'</li>')
   }
   
+  
 }
 
 function checkAnswer(guess){
   let question = questions[currentQuestion];
   if(question.correct === guess){
     score++;  
+    updateScore(score);
     
   }
   currentQuestion++;
@@ -79,6 +90,7 @@ function checkAnswer(guess){
   }
   else{
     showQuestion();
+    
   }
   
 }

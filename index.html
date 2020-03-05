@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="img/logo.png" />
   <title>Disney Characters Quiz</title>
   <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
@@ -11,6 +12,13 @@
   <div class="start">
     <h1>Disney Characters Quiz</h1>
     <a href="#" class="start-quiz">Start Quiz</a>
+  </div>
+  <!-- Score Section -->
+  <div>
+    <ul aria-live="polite">
+      <li class='questionCount'>Question: 0 of 4</li>
+      <li class='currentScore'>Current Score: 0</li>
+    </ul>
   </div>
   <!-- Quiz Section -->
   <div class="quiz">
@@ -25,12 +33,13 @@
   </div>
   <!-- Summary Section -->
   <div class="summary">
-    <h2>Summary Screen</h2>
+    <h2>Results</h2>
     <p class="summary-text">Congrats you scored x out of y correct!</p>
     <img class="happy-ditto" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/93398061-6796-4ec7-847c-6aecc1991169/d9mg05k-ad5439c4-bf80-4628-be1f-0fef3e258d73.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzkzMzk4MDYxLTY3OTYtNGVjNy04NDdjLTZhZWNjMTk5MTE2OVwvZDltZzA1ay1hZDU0MzljNC1iZjgwLTQ2MjgtYmUxZi0wZmVmM2UyNThkNzMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ru63Eryf6Lp9Z0EdVIuGu2KumV_fqAdolzrgoKdvFao">
     <img class="sad-ditto" src="https://fc08.deviantart.net/fs70/f/2014/025/3/2/serious_ditto_final_1_by_pikamander2-d73rb0j.svg">
     <a href="#" class="restart-quiz">Restart Quiz</a>
   </div>
+  
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 <script src="./main.js"></script>
 </body>
