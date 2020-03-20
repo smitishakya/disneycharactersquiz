@@ -48,6 +48,13 @@
     background-position: center center;
     background-repeat: no-repeat;
   }
+  .score li {
+    margin: 30px;
+    padding: 20px;
+    background-color: #c488c4;
+    list-style: none;
+    display: inline-block;
+  }
   
   .answer.blue{
     background-image: url("./img/jasmine.png");
